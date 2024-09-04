@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $id = $_POST['id'];
+  $item_name = $_POST['item_name'];
+  $added_by = $_POST['added_by'];
 
   $db_host   = '192.168.56.12';
   $db_name   = 'fvision';
@@ -11,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 
-  // Delete the item with the given ID
-  $stmt = $pdo->prepare("DELETE FROM items WHERE id = ?");
-  $stmt->execute([$id]);
+  // Add the new item to the list
+  $stmt = $pdo->prepare("INSERT INTO items (item_name, added_by) VALUES (?, ?)");
+  $stmt->execute([$item_name, $added_by]);
 
-  // Redirect back to the grocery list admin page
+  // Redirect to same grocery list page 
   header("Location: grocery-list-admin.php");
   exit();
 }
