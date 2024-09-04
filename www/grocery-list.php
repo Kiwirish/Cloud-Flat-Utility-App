@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>User - Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
     table, th, td {
       border: 1px solid grey;
@@ -12,7 +14,8 @@
     }
     </style>
 </head>
-<body>
+<body class="user-page">
+<div class="container">
 
 <h1>Grocery List</h1>
 
@@ -50,6 +53,7 @@ while($row = $q->fetch()){
   <input type="text" id="added_by" name="added_by" required><br><br>
   <input type="submit" value="Add Item">
 </form>
+</div>
 
 </body>
 </html>

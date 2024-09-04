@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>Laundry Booking</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body class="user-page">
+<div class="container">
 
 <h1>Laundry Booking System</h1>
 
@@ -40,6 +43,7 @@ while ($row = $q->fetch()) {
 }
 ?>
 </table>
+</div>
 
 </body>
 </html>
