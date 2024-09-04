@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>User - Grocery List</title>
+    <title>Admin - Manage Grocery List</title>
     <style>
     table, th, td {
       border: 1px solid grey;
@@ -14,12 +14,12 @@
 </head>
 <body>
 
-<h1>Grocery List</h1>
+<h1>Admin - Grocery List</h1>
 
 <p>Here’s the current grocery list:</p>
 
 <table>
-<tr><th>Item Name</th><th>Added By</th><th>Date Added</th></tr>
+<tr><th>Item Name</th><th>Added By</th><th>Date Added</th><th>Action</th></tr>
 
 <?php
 // Connect to the database
@@ -36,7 +36,11 @@ $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 $q = $pdo->query("SELECT * FROM items");
 
 while($row = $q->fetch()){
-  echo "<tr><td>".$row["item_name"]."</td><td>".$row["added_by"]."</td><td>".$row["date_added"]."</td></tr>\n";
+  echo "<tr><td>".$row["item_name"]."</td><td>".$row["added_by"]."</td><td>".$row["date_added"]."</td>";
+  echo "<td><form method='POST' action='delete-item.php'>
+          <input type='hidden' name='id' value='".$row['id']."'>
+          <input type='submit' value='Delete'>
+        </form></td></tr>\n";
 }
 ?>
 
@@ -53,4 +57,3 @@ while($row = $q->fetch()){
 
 </body>
 </html>
-
