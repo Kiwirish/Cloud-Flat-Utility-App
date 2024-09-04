@@ -29,6 +29,13 @@ Vagrant.configure("2") do |config|
     dbserver.vm.provision "shell", path: "build-dbserver-vm.sh"
   end
 
+  config.vm.define "adminwebserver" do |adminwebserver|
+    adminwebserver.vm.hostname = "adminwebserver"
+    adminwebserver.vm.network "forwarded_port", guest: 80, host: 8081
+    adminwebserver.vm.network "private_network", ip: "192.168.56.13"
+    adminwebserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
+    adminwebserver.vm.provision "shell", path: "build-adminwebserver-vm.sh"
+  end
 
 
 
