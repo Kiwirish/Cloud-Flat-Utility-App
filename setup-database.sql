@@ -12,7 +12,11 @@ CREATE TABLE laundry_bookings (
 );
 
 
-INSERT INTO items (item_name, added_by) VALUES ('Milk', 'User1');
-INSERT INTO items (item_name, added_by) VALUES ('Bread', 'User2');
+INSERT INTO items (item_name, added_by) VALUES ('Milk', 'Blake');
+INSERT INTO items (item_name, added_by) VALUES ('Bread', 'Luke');
+INSERT INTO items (item_name, added_by) VALUES ('200g Steak', 'Quinn');
 
-INSERT INTO laundry_bookings (booked_by, booking_date) VALUES ('Blake', '20-10-2024');
+
+INSERT INTO laundry_bookings (booked_by, booking_date) VALUES ('Blake', '2024-9-9');
+INSERT INTO laundry_bookings (booked_by, booking_date) VALUES ('Quinn', '2024-9-10');
+INSERT INTO laundry_bookings (booked_by, booking_date) VALUES ('Luke', '2024-9-11');
