@@ -6,7 +6,7 @@
 </head>
 <body class="admin-page">
     <div class="container">
-        <h1>Flat Utility App (Admin Page)</h1>
+        <h1>Flat Utility App Administration</h1>
 
         <p>As the admin, manage and oversee shared flat resources.</p>
 

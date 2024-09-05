@@ -90,7 +90,7 @@ input[type="text"], input[type="date"], select {
 }
 
 .admin-page {
-    background-color: #FAEA9D; /* Light orange for admin pages */
+    background-color: #FFFFAD; /* Light orange for admin pages */
 }
 
 button.delete {

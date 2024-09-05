@@ -23,7 +23,7 @@
 <h2>Existing Bookings</h2>
 
 <table>
-<tr><th>Booked By</th><th>Date</th><th>Status</th></tr>
+<tr><th>Booked By</th><th>Date</th></tr>
 
 <?php
 // Connect to the database

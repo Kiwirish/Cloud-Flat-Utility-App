@@ -13,7 +13,7 @@
 <h1>Admin - Laundry Booking System</h1>
 
 <table>
-<tr><th>Booked By</th><th>Date</th><th>Status</th><th>Action</th></tr>
+<tr><th>Booked By</th><th>Date</th><th>Action</th></tr>
 
 <?php
 $db_host   = '192.168.56.12';
@@ -28,7 +28,7 @@ $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 $q = $pdo->query("SELECT * FROM laundry_bookings ORDER BY booking_date ASC");
 
 while ($row = $q->fetch()) {
-    echo "<tr><td>".$row['booked_by']."</td><td>".$row['booking_date']."</td><td>".$row['status']."</td>";
+    echo "<tr><td>".$row['booked_by']."</td><td>".$row['booking_date']."</td>";
     echo "<td><form method='POST' action='delete-laundry-booking.php'>
             <input type='hidden' name='id' value='".$row['id']."'>
             <input type='submit' value='Delete'>
