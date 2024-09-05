@@ -1,0 +1,25 @@
+/* Admin-specific styles */
+.admin-page {
+    background-color: #ffe0b2; /* Light orange background for admin pages */
+}
+
+/* Admin page buttons */
+.admin-page input[type="submit"],
+.admin-page button,
+.admin-page a.button {
+    background-color: #FF7043; /* Orange background for admin buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.admin-page input[type="submit"]:hover,
+.admin-page button:hover,
+.admin-page a.button:hover {
+    background-color: #E64A19; /* Darker orange on hover */
+}

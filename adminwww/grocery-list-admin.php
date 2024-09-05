@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>Admin - Manage Grocery List</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="style.css">
+
+
     <style>
     table, th, td {
       border: 1px solid grey;
@@ -12,7 +16,8 @@
     }
     </style>
 </head>
-<body>
+<body class="admin-page">
+<div class="container">
 
 <h1>Admin - Grocery List</h1>
 
@@ -54,6 +59,7 @@ while($row = $q->fetch()){
   <input type="text" id="added_by" name="added_by" required><br><br>
   <input type="submit" value="Add Item">
 </form>
+    </div>
 
 </body>
 </html>

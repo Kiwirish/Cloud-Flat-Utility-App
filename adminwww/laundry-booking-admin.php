@@ -2,8 +2,13 @@
 <html>
 <head>
     <title>Admin - Laundry Booking Management</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body class="admin-page">
+<div class="container">
+
 
 <h1>Admin - Laundry Booking System</h1>
 
@@ -31,6 +36,7 @@ while ($row = $q->fetch()) {
 }
 ?>
 </table>
+</div>
 
 </body>
 </html>

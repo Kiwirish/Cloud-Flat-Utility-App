@@ -1,16 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Flat Utility App - Admin Access</title>
+    <title>Admin - Flat Utility App</title>
+    <link rel="stylesheet" href="index-style.css">
 </head>
-<body>
+<body class="admin-page">
+    <div class="container">
+        <h1>Flat Utility App (Admin Page)</h1>
 
-<h1>Main Menu</h1>
+        <p>As the admin, manage and oversee shared flat resources.</p>
 
-<ul>
-    <li><a href="grocery-list-admin.php">Shared Grocery List Administration</a></li>
-    <li><a href="laundry-booking-admin.php">Laundry Booking System Administration</a></li>
-</ul>
-
+        <ul class="menu">
+            <li><a href="grocery-list-admin.php" class="button">Manage Grocery List</a></li>
+            <li><a href="laundry-booking-admin.php" class="button">Manage Laundry Bookings</a></li>
+        </ul>
+    </div>
 </body>
 </html>
