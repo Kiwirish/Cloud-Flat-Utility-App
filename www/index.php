@@ -8,8 +8,8 @@
 <body class="user-page">
     <div class="container">
         <h1>Flat Utility App</h1>
-        <p>Manage your flat’s shared resources with ease. Access the shared grocery list or book laundry slots for your flat below.</p>
-
+        <p>Manage your flat’s shared resources with ease. </p>
+        <p>Access the shared grocery list or book laundry slots for your flat below.</p>
         <ul class="menu">
             <li><a href="grocery-list.php" class="button">Shared Grocery List</a></li>
             <li><a href="laundry-booking.php" class="button">Laundry Booking System</a></li>

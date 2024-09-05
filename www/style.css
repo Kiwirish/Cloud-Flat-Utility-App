@@ -45,27 +45,52 @@ input[type="text"], input[type="date"], select {
     border-radius: 4px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
+/* User page buttons and styles */
+.user-page input[type="submit"],
+.user-page a.button {
+    background-color: #4CAF50; /* Green for user pages */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover {
+.user-page input[type="submit"]:hover,
+.user-page a.button:hover {
     background-color: #45a049;
 }
 
-/* User page styles */
-.user-page {
-    background-color: #e3f2fd; /* Light blue background */
+/* Admin page buttons and styles */
+.admin-page input[type="submit"],
+.admin-page button,
+.admin-page a.button {
+    background-color: #FF7043; /* Orange for admin pages */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
 }
 
-/* Admin page styles */
+.admin-page input[type="submit"]:hover,
+.admin-page button:hover,
+.admin-page a.button:hover {
+    background-color: #E64A19; /* Darker orange on hover */
+}
+
+
+/* Page-specific background colors */
+.user-page {
+    background-color: #e3f2fd; /* Light blue for user pages */
+}
+
 .admin-page {
-    background-color: #ffe0b2; /* Light orange background */
+    background-color: #ffe0b2; /* Light orange for admin pages */
 }
 
 button.delete {
@@ -80,3 +105,4 @@ button.delete {
 button.delete:hover {
     background-color: #e53935;
 }
+
