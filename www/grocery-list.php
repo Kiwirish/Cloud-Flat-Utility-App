@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>User - Grocery List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <style>
     table, th, td {
