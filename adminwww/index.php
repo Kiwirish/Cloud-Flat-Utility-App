@@ -13,6 +13,8 @@
         <ul class="menu">
             <li><a href="grocery-list-admin.php" class="button">Manage Grocery List</a></li>
             <li><a href="laundry-booking-admin.php" class="button">Manage Laundry Bookings</a></li>
+            <li><a href="power-cost-admin.php" class="button">Manage Power Costs</a></li>
+
         </ul>
     </div>
 </body>

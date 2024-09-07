@@ -31,10 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $q = $pdo->prepare("SELECT * FROM power_costs WHERE month = ?");
     $q->execute([$month]);
 
-    echo "<table><tr><th>Month</th><th>Person</th><th>Cost</th></tr>";
+    echo "<table><tr><th>Person</th><th>Cost</th></tr>";
 
     while ($row = $q->fetch()) {
-        echo "<tr><td>".$row['month']."</td><td>".$row['person']."</td><td>$".$row['calculated_cost']."</td></tr>\n";
+        echo "<tr><td>".$row['person']."</td><td>$".$row['calculated_cost']."</td></tr>\n";
     }
 
     echo "</table>";

@@ -33,9 +33,6 @@ table, th, td {
     text-align: left;
 }
 
-th {
-    /*background-color: #FDFD96;*/
-}
 
 input[type="text"], input[type="date"], input[type="number"], select {
     width: 80%;
