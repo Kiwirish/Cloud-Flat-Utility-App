@@ -28,21 +28,22 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    /*border: 1px solid #FDFD96;*/
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #f8f8f8;
+    /*background-color: #FDFD96;*/
 }
 
-input[type="text"], input[type="date"], select {
-    width: 100%;
+input[type="text"], input[type="date"], input[type="number"], select {
+    width: 80%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #FDFD96;
     border-radius: 4px;
+    border-width: medium;
 }
 
 /* User page buttons and styles */
@@ -66,7 +67,7 @@ input[type="text"], input[type="date"], select {
 .admin-page input[type="submit"],
 .admin-page button,
 .admin-page a.button {
-    background-color: #FF7043; /* Orange for admin pages */
+    background-color: #f44336; /* Orange for admin pages */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -80,7 +81,7 @@ input[type="text"], input[type="date"], select {
 .admin-page input[type="submit"]:hover,
 .admin-page button:hover,
 .admin-page a.button:hover {
-    background-color: #E64A19; /* Darker orange on hover */
+    background-color: #f44336; /* Darker orange on hover */
 }
 
 
@@ -90,11 +91,11 @@ input[type="text"], input[type="date"], select {
 }
 
 .admin-page {
-    background-color: #FFFFAD; /* Light orange for admin pages */
+    background-color: #FDFD96; /* Light orange for admin pages */
 }
 
 button.delete {
-    background-color: #f44336;
+    background-color:#f44336;
     color: white;
     padding: 8px 16px;
     border: none;
